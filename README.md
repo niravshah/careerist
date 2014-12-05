@@ -17,7 +17,7 @@ We use https so it can run inside Codio. For information about https & port acce
 
 
 ##How the Pack was prepared
-This Starter Pack was built on the Angular Codio Certified Stack, which includes Node+Grunt+MongoDB. From the Codio Dashboard, we created a new project by importing from the Angular Seed project : `https://github.com/angular/angular-seed.git` (https://github.com/angular/angular-seed).
+This Starter Pack was built on the `Angular` Codio Certified Stack, which includes Node+Grunt+MongoDB. From the Codio Dashboard, we created a new project by importing from the Angular Seed project : `https://github.com/angular/angular-seed.git` (https://github.com/angular/angular-seed).
 
 Once the project was opened in the IDE, we opened up a Terminal window and ran
 

@@ -3,7 +3,7 @@
 ##Using the Pack
 To use the Pack, we created 2 menu options, which you can find on the right of the menu. These menus can be configured in the `.codio` file.
 
-1. **Start Server** : `startup.sh` auto starts the server but should it be stopped for any reason, you can use this menu option.
+1. **Start Server** : When you come into your Project, start the internal server (`npm start`).
 1. **Preview** : this previews your app.
 
 ##Accessing the application

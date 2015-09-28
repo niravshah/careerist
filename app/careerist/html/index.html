@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="css/vertical-rhythm.min.css">
         <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">      
+        <link rel="stylesheet" href="css/magnific-popup.css">        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.1.1/css/zocial.css">
 
         
@@ -188,10 +188,10 @@
                     
                     <div class="align-center">
                         <h3 class="banner-heading font-alt">Ready to Achive your Aspirations?</h3>
-                        
-                        <div class="local-scroll">
-                            <button onclick="hello('linkedin').login()" class="zocial linkedin">Request Invite</button>
-                        </div>
+                        <button class="zocial linkedin">Start Here</button>
+                        <!--div class="local-scroll">
+                            <a href="#contact" class="btn btn-mod btn-w btn-medium btn-round">Start Here</a>
+                        </div-->
                     </div>
                     
                 </div>
@@ -280,33 +280,7 @@
         <script type="text/javascript" src="js/all.js"></script>
         <script type="text/javascript" src="js/contact-form.js"></script>
         <script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>       
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hellojs/1.8.4/hello.js"></script>
-        <script type="text/javascript" src="js/hello-linkedin.js"></script>  
-        <!--script type="text/javascript" src="js/ng-hello.js"></script-->
         <!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
-        <script type="text/javascript">
-        hello.init({
-          linkedin: '774c94xg0zufb9'
-          }, {scope:'r_basicprofile,r_emailaddress', redirect_uri: 'http://mystic-king.codio.io:9500/app/careerist/index.html'});
-
-        hello.on('auth.login', function(auth) {
-          console.log('Hellojs Auth Login');          
-          hello(auth.network).api('/me').then(function(r) {
-            console.log(JSON.stringify(r));
-            localStorage.setItem("ln", JSON.stringify(r));
-            
-            $.ajax({
-              type: "POST",
-              url: 'http://truck-aloha.codio.io:8080/specky/lnreg',
-              data: {profile:JSON.stringify(r)},
-              success: function(){console.log('Success!')}
-            });            
-            
-            
-            
-            });                    
-        });          
-        </script>
         
     </body>
 </html>
